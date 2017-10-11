@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>angular</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<base href="/" />
+</head>
+<body ng-app="Demo">
+
+<nav class="navbar navbar-inverse">
+	 <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">Home</a></li>
+            <li><a href="course">About</a></li>
+            <li><a href="service">Service</a></li>
+           </ul>
+      </div>
+</nav>
+
+ <section id="about-us">
+        <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+            <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-4 section-heading row1">
+                    <h2>About Project</h2>
+                
+                    <p>This is a demo project to show routing in Angularjs.It shows the use of ng-view.<br>The section at top and bottom are fixed while the content in between keeps changing.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<div class="container">
+	<div class="mainContent">
+		<ng-view></ng-view>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<footer>
+	<div>
+		<div class="text-center">
+			<h1>CONTACT</h1>
+			<h4>divyanshichaturvedi0123@gmail.com</h4>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+<script src="controllers/router.js"></script>
+</body>
+</html>
